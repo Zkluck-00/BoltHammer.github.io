@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <title>Movimientos | Bolt & Hammer</title>
+</head>
+<body data-page="movimientos">
+  <div class="app-shell">
+    <aside id="sidebar"></aside>
+    <main class="main-content">
+      <div id="topbar"></div>
+      <div class="content-area">
+        <div id="pageAlert"></div>
+        
+<div class="row g-3">
+  <div class="col-lg-4"><div class="card"><div class="card-body"><h5 class="fw-bold mb-3">Registrar movimiento</h5><div id="movementAlert"></div><form id="movementForm" class="row g-3"><div class="col-12"><label class="form-label">Producto</label><select id="movementProduct" class="form-select" required></select></div><div class="col-12"><label class="form-label">Tipo</label><select id="movementType" class="form-select"><option value="ENTRADA">Entrada de stock</option><option value="AJUSTE">Ajuste de stock final</option></select></div><div class="col-12"><label class="form-label">Cantidad</label><input id="movementQuantity" type="number" min="1" class="form-control" required></div><div class="col-12"><label class="form-label">Motivo</label><textarea id="movementReason" class="form-control" rows="3"></textarea></div><div class="col-12"><button class="btn btn-primary">Guardar movimiento</button></div></form></div></div></div>
+  <div class="col-lg-8"><div class="card"><div class="card-body"><h5 class="fw-bold mb-3">Historial de movimientos</h5><div class="table-responsive"><table class="table align-middle"><thead><tr><th>Fecha</th><th>Tipo</th><th>Producto</th><th>Cantidad</th><th>Motivo</th><th>Usuario</th></tr></thead><tbody id="movementTableBody"></tbody></table></div></div></div></div>
+</div>
+
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/config.js"></script>
+  <script src="../assets/js/apiClient.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "bolt-hammer-app",
+  "version": "1.1.1",
+  "private": true,
+  "description": "Sistema web de inventario y ventas Bolt & Hammer",
+  "scripts": {
+    "install:all": "npm --prefix backend install",
+    "start": "npm --prefix backend start",
+    "dev": "npm --prefix backend run dev",
+    "db:test": "npm --prefix backend run db:test",
+    "db:init": "npm --prefix backend run db:init",
+    "frontend": "npm --prefix frontend start"
+  }
+}

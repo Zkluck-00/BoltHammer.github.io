@@ -1,0 +1,24 @@
+### Prueba de salud
+GET http://localhost:3000/api/health
+
+### Login administrador
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "admin"
+}
+
+### Login vendedor
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "vendedor",
+  "password": "vendedor"
+}
+
+### Listar productos
+GET http://localhost:3000/api/products
+Authorization: Bearer PEGAR_TOKEN_AQUI
